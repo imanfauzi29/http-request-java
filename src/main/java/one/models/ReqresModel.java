@@ -17,10 +17,5 @@ public class ReqresModel {
     @SerializedName("data")
     List<UserModel> Data;
 
-    public List<UserModel> getData() {
-        return Data;
-    }
-
-
 
 }

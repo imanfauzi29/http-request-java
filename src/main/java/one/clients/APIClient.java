@@ -18,7 +18,7 @@ public class APIClient {
         try {
             return reqresService.getData(1).execute().body();
         }catch (IOException e) {
-            System.out.println("error:" + e.getMessage());
+            System.out.println(e.getMessage());
         }
 
         return null;
@@ -29,11 +29,10 @@ public class APIClient {
             return reqresService.getId(2).execute().body();
 
         } catch (IOException e) {
-            System.out.println("error: " + e.getMessage());
+            System.out.println(e.getMessage());
         }
 
         return null;
     }
-
 
 }

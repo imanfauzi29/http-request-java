@@ -1,6 +1,7 @@
 package one.models;
 
 import com.google.gson.annotations.SerializedName;
+import two.models.ApiModel;
 
 public class UserModel {
     @SerializedName("id")

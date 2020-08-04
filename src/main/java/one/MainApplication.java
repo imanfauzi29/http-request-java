@@ -9,7 +9,8 @@ public class MainApplication {
 
     public static void main(String[] args) {
         getAll();
-//        getById();
+        System.out.println("=== Get User By Id ===");
+        getById();
         System.exit(0);
     }
 
@@ -21,13 +22,13 @@ public class MainApplication {
         System.out.println(response);
     }
 
-//    public static void getById() {
-//        APIClient client = new APIClient();
-//        getIdModel getById = client.getById();
-//
-//        String response = new Gson().toJson(getById);
-//        System.out.println(response);
-//
-//    }
+    public static void getById() {
+        APIClient client = new APIClient();
+        getIdModel getById = client.getById();
+
+        String response = new Gson().toJson(getById);
+        System.out.println(response);
+
+    }
 
 }
